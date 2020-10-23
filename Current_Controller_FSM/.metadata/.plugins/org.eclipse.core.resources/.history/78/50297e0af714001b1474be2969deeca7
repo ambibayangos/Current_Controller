@@ -1,0 +1,43 @@
+scchart Current_Controller_FSM {
+	
+	input signal doorOpen,
+				 doorClosed,
+				 touched,
+				 waitUser_ex,
+				 openingTimer_ex,
+				 doorAlmostClosed;
+	
+	output signal init_state,
+				  waitTouch_state,
+				  generateOpening_state,
+				  startOpeningTimer,
+				  startSoftCloseTimer,
+				  startWaitUserTimer;
+	
+    initial state TOP
+    {
+      initial state idle
+      --> init with /init_state;
+      
+       state init
+      --> waitUser with doorOpen
+      --> waitTouch with doorClosed;
+      
+      state generateClosing
+      --> waitTouch with doorClosed;
+      //--> breaking with startSoftCloseTimer_ex;
+      
+      state waitTouch
+      --> generateOpening with touched/startOpeningTimer;
+      
+      state generateOpening
+      --> waitUser with doorOpen/startWaitUserTimer;generateOpening_state
+      -->waitTouch with openingTimer_ex/waitTouch_state;
+      
+      state waitUser
+      --> breaking with waitUser_ex;
+      
+      state breaking
+      --> generateClosing with doorAlmostClosed;
+    };
+}
