@@ -1,12 +1,6 @@
-/*
- * Test_Phase_Correct.c
- *
- * Created: 23/10/2020 5:27:17 pm
- * Author : abay643
- */ 
-
 #include <avr/io.h>
 #include <stdio.h>
+#include <avr/interrupt.h>
 #include "current_controller_fsm.h"
 #include "Drivers/UART.h"
 
@@ -16,9 +10,9 @@ volatile int timer_overflow_count = 0;
 
 
 ISR(TIMER2_COMPA_vect)
-{	
+{
 	UART_transmit_number(88);
-	// avoid overlow on the variable "timer_overflow_count" 
+	// avoid overlow on the variable "timer_overflow_count"
 	if(timer_overflow_count == 1000000)
 	{
 		timer_overflow_count = 1;
@@ -30,7 +24,7 @@ ISR(TIMER2_COMPA_vect)
 }
 
 void init_timer(void)
-{	
+{
 	// set to ctc mode
 	TCCR2A |= (1<<WGM21);
 	
@@ -55,22 +49,22 @@ void gp_io_init(void)
 }
 
 void init_coil_pwm(void)
-{	
-	// set to phase correct mode (mode 10)
-	TCCR1B |= (1<<WGM13); TCCR1A |= (1<<WGM11);
-		
+{
+	// set to phase correct mode (mode 15)	
+	TCCR1A |= (1<<WGM10) | (1<<WGM11); TCCR1B |= (1<<WGM12) | (1<<WGM13);
+	
 	// set frequency to 20Hz for prescaller 1024
-	ICR1  = 19;
+	ICR1  = 388;
 	
 	// set the duty cycle
-	OCR1A = 50*19/100;
+	OCR1A = 50*388/100;
 	
 	// set the duty cycle
-	OCR1B = 50*19/100;
+	OCR1B = 50*388/100;
 	
 	// set precaller to 1024 and start pwm
 	TCCR1B |= (1<<CS12) | (1<<CS10); TCCR1B &= ~(1<<CS11);
-		
+	
 }
 
 void stop_coil_pwm(int polarity)
@@ -120,7 +114,7 @@ void touch_pwm_init(void)
 }
 
 void start_touch_pwm(void)
-{	
+{
 	// reset timer count to zero
 	TCNT0 = 0;
 	// set prescaller to 8 and start pwm
@@ -128,13 +122,13 @@ void start_touch_pwm(void)
 }
 
 void stop_touch_pwm(void)
-{	
+{
 	// disconnect prescaller
 	TCCR0B &= ~((1<<CS02) | (1<<CS01) | (1<<CS00));
 }
 
 int main(void)
-{	
+{
 	reset();
 	
 	init_timer();
@@ -146,17 +140,18 @@ int main(void)
 	start_coil_pwm(0);
 	start_touch_pwm();
 	
-
+	sei();
 	
-    while (1) 
-    {	
+	while (1)
+	{		
 		tick();
 		
 		if(init_state)
 		{
-			//UART_transmit_number(5);
+			//UART_transmit_string("Current state: init state\n\r");
 		}
 	}
 	
-}
 
+	
+}

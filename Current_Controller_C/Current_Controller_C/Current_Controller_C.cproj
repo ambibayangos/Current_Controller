@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>Test_Phase_Correct</AssemblyName>
-    <Name>Current_Controller</Name>
-    <RootNamespace>Test_Phase_Correct</RootNamespace>
+    <AssemblyName>Current_Controller_C</AssemblyName>
+    <Name>Current_Controller_C</Name>
+    <RootNamespace>Current_Controller_C</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
