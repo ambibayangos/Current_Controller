@@ -1,0 +1,5 @@
+scchart Simpler_FSM {
+
+    initial state idle
+    -->;
+}

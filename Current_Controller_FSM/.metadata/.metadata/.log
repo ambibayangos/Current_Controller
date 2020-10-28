@@ -1,0 +1,47 @@
+!SESSION 2020-10-28 21:11:55.196 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_222
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_NZ
+Framework arguments:  --launcher.XXPermSize 128m
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 --launcher.XXPermSize 128m
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 21:12:15.020
+!MESSAGE Both 'de.cau.cs.kieler.kexpressions' and 'de.cau.cs.kieler.kexpressions' register a package for 'http://kieler.cs.cau.de/kext/0.1.0'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 21:12:15.031
+!MESSAGE Both 'de.cau.cs.kieler.esterel.kexpressions.ui' and 'de.cau.cs.kieler.kexpressions.ui' register an extension parser for 'expr'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.s', id='de.cau.cs.kieler.sccharts.commands.STransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.scg', id='de.cau.cs.kieler.sccharts.commands.SCGTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.ui.commands.SCGToSCLTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.commands.ui.SCLToSCGTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.203
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.synccharts', id='de.cau.cs.kieler.sccharts.commands.SyncChartsTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 21:12:15.240
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.240
+!MESSAGE Cannot bind to an undefined command: plug-in='de.cau.cs.kieler.core.model', id='de.cau.cs.kieler.core.model.zoom'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.s', id='de.cau.cs.kieler.sccharts.commands.STransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.scg', id='de.cau.cs.kieler.sccharts.commands.SCGTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.ui.commands.SCGToSCLTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.commands.ui.SCLToSCGTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 21:12:15.430
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.synccharts', id='de.cau.cs.kieler.sccharts.commands.SyncChartsTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2020-10-28 21:12:20.677
+!MESSAGE Fallback to simple update. Reason: Empty base model.

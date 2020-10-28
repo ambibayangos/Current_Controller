@@ -23,22 +23,17 @@ void tick();
 
 
 //input signals
-extern char doorOpen;
-extern char	doorClosed;
-extern char	touched;
+extern char door_closed;
+extern char	door_open;
 extern char	waitUser_ex;
-extern char	openingTimer_ex;
-extern char	doorAlmostClosed;
+extern char	door_touched;
+extern char	opening_timer_ex;
 
 //output signal
 extern char	init_state;
+extern char	waitUser_state;
 extern char	waitTouch_state;
 extern char	generateOpening_state;
-extern char	waitUser_state;
-extern char	breaking_state;
-extern char	generareClosing_state;
-extern char	startOpeningTimer;
-extern char	startSoftCloseTimer;
-extern char	startWaitUserTimer;
+extern char	generateClosing_state;
 
 #endif /* CURRENT_CONTROLLER_FSM_H_ */

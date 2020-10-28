@@ -1,6 +1,5 @@
 #include <avr/io.h>
 #include <stdio.h>
-#include <avr/interrupt.h>
 #include "current_controller_fsm.h"
 #include "Drivers/UART.h"
 
@@ -50,17 +49,17 @@ void gp_io_init(void)
 
 void init_coil_pwm(void)
 {
-	// set to phase correct mode (mode 15)	
-	TCCR1A |= (1<<WGM10) | (1<<WGM11); TCCR1B |= (1<<WGM12) | (1<<WGM13);
+	// set to phase correct mode (mode 10)
+	TCCR1B |= (1<<WGM13); TCCR1A |= (1<<WGM11);
 	
 	// set frequency to 20Hz for prescaller 1024
-	ICR1  = 388;
+	ICR1  = 19;
 	
 	// set the duty cycle
-	OCR1A = 50*388/100;
+	OCR1A = 50*19/100;
 	
 	// set the duty cycle
-	OCR1B = 50*388/100;
+	OCR1B = 50*19/100;
 	
 	// set precaller to 1024 and start pwm
 	TCCR1B |= (1<<CS12) | (1<<CS10); TCCR1B &= ~(1<<CS11);
@@ -140,18 +139,14 @@ int main(void)
 	start_coil_pwm(0);
 	start_touch_pwm();
 	
-	sei();
-	
 	while (1)
-	{		
+	{
 		tick();
 		
 		if(init_state)
 		{
-			//UART_transmit_string("Current state: init state\n\r");
+			//UART_transmit_number(5);
 		}
 	}
-	
-
 	
 }

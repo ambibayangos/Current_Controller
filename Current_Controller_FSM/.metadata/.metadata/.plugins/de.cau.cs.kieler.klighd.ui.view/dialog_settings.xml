@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;de.cau.cs.kieler.klighd.ui.view.diagram isLinkedWithActiveEditor=&quot;true&quot; synchronizeSelection=&quot;true&quot;&gt;&#x0D;&#x0A;&lt;recentSynthesisOptions&gt;&#x0D;&#x0A;&lt;de.cau.cs.kieler.klighd.ui.view.syntheses.MessageModelSynthesis/&gt;&#x0D;&#x0A;&lt;/recentSynthesisOptions&gt;&#x0D;&#x0A;&lt;synthesisSelection/&gt;&#x0D;&#x0A;&lt;controllers/&gt;&#x0D;&#x0A;&lt;/de.cau.cs.kieler.klighd.ui.view.diagram&gt;" key="de.cau.cs.kieler.klighd.ui.view.diagram"/>
+</section>

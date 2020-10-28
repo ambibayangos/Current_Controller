@@ -1,0 +1,20 @@
+scchart Simpler_FSM {
+	
+	input signal door_closed,door_open,waitUser_ex;
+	
+	output signal start_waitUser,waitUser_state,init_state;
+	
+    initial state idle
+    -->init with /init_state;
+    
+    state init
+    -->waitTouch with door_closed
+    -->waitUser with door_open/start_waitUser;waitUser_state;
+    
+    state waitTouch;
+    
+    state waitUser
+    -->generateClosing with waitUser_ex;
+    
+    state generateClosing;
+}

@@ -1,0 +1,10 @@
+scchart Simpler_FSM {
+	
+	input signal init_state;
+	
+    initial state idle
+    -->init with /init_state;
+    
+    state init
+    -->waitTouch with /door_closed;
+}

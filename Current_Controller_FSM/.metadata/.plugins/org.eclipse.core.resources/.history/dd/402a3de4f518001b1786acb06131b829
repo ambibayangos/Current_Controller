@@ -1,0 +1,4 @@
+scchart Simpler_FSM {
+
+    initial state init;
+}
