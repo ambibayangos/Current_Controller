@@ -4666,3 +4666,88 @@ java.lang.IllegalStateException: Passed org.eclipse.xtext.builder.clustering.Cur
 
 !ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2020-10-28 21:49:04.716
 !MESSAGE Fallback to simple update. Reason: Empty base model.
+!SESSION 2020-10-28 23:33:08.425 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Framework arguments:  --launcher.XXPermSize 128m
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 --launcher.XXPermSize 128m
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-10-28 23:33:37.459
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 23:33:37.950
+!MESSAGE Both 'de.cau.cs.kieler.kexpressions' and 'de.cau.cs.kieler.kexpressions' register a package for 'http://kieler.cs.cau.de/kext/0.1.0'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-10-28 23:33:38.002
+!MESSAGE Both 'de.cau.cs.kieler.esterel.kexpressions.ui' and 'de.cau.cs.kieler.kexpressions.ui' register an extension parser for 'expr'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.s', id='de.cau.cs.kieler.sccharts.commands.STransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.scg', id='de.cau.cs.kieler.sccharts.commands.SCGTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.ui.commands.SCGToSCLTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.commands.ui.SCLToSCGTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:38.879
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.synccharts', id='de.cau.cs.kieler.sccharts.commands.SyncChartsTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 23:33:39.040
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.040
+!MESSAGE Cannot bind to an undefined command: plug-in='de.cau.cs.kieler.core.model', id='de.cau.cs.kieler.core.model.zoom'
+
+!ENTRY org.eclipse.ui 2 0 2020-10-28 23:33:39.971
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.971
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.s', id='de.cau.cs.kieler.sccharts.commands.STransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.971
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.sccharts.scg', id='de.cau.cs.kieler.sccharts.commands.SCGTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.972
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.ui.commands.SCGToSCLTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.972
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.scl.ui', id='de.cau.cs.kieler.scl.commands.ui.SCLToSCGTransformation', categoryId='de.cau.cs.kieler.scl.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-10-28 23:33:39.972
+!MESSAGE Commands should really have a category: plug-in='de.cau.cs.kieler.synccharts', id='de.cau.cs.kieler.sccharts.commands.SyncChartsTransformation', categoryId='de.cau.cs.kieler.sccharts.commands.category'
+
+!ENTRY org.eclipse.jface 2 0 2020-10-28 23:33:52.432
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-10-28 23:33:52.432
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.call.hierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65c66fc4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.xtext.xbase.ui.hierarchy.OpenCallHierarchy,Open Call Hierarchy,
+		Open a call hierarchy on the selected element,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a90f33d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.XtextEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.xtext.ui.editor.OpenCallHierarchy,Open Call Hierarchy,
+		Open call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c7b27c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.XtextEditorScope,,,system)
+
+!ENTRY de.cau.cs.kieler.kico 2 0 2020-10-28 23:33:54.071
+!MESSAGE KiCo cannot find the feature with ID 'VHDL'
+
+!ENTRY de.cau.cs.kieler.kico 4 0 2020-10-28 23:33:54.117
+!MESSAGE Feature 'circuit' references a feature 'VHDL' that cannot be found.
+
+!ENTRY de.cau.cs.kieler.klighd.incremental 1 0 2020-10-28 23:33:54.855
+!MESSAGE Fallback to simple update. Reason: Empty base model.

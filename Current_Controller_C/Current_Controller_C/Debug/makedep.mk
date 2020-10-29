@@ -4,6 +4,8 @@
 
 current_controller_fsm.c
 
+Drivers\Timers.c
+
 Drivers\UART.c
 
 main.c
