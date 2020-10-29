@@ -12,8 +12,6 @@ static int overflowCount = 0;
 static int duty = 50;
 
 
-
-
 ISR(TIMER0_COMPA_vect)
 {
 	//UART_transmit_string("From match A \r\n");
@@ -27,7 +25,7 @@ ISR(TIMER0_COMPB_vect)
 
 ISR(TIMER1_COMPA_vect)
 {
-	
+	// do something
 }
 
 ISR(TIMER0_OVF_vect)

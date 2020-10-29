@@ -1,0 +1,31 @@
+What the system should do ?
+
+Initially the system does not know if the door is opened or not
+thus to determine the state of the door a 50% duty cycle is provided.
+	1. Here the current provided must be low to ensure the door will not be opened (if the door is closed)
+	   (if the force provided is opening then if the door is opened the door should not move the door significantly)
+
+If the door is detected to be opened the door should be able to detect
+how fast the door is approaching.
+
+If the door is sensed to be approaching fast the breaking force should be provided.
+However if the door is approaching slowy the breaking force is not provided.
+
+Onced the door position is sensed to be close to the door then the closing force
+should be provided. (can the door be sensed for postion and speed at the same time using coil only?) 
+
+This could be potentially dangerous(fingers could be caught on the door) so the closing force provided 
+must be low and then gradually increase in able to make sure the door is shut properly.
+
+
+
+
+############################ Design discoveries  ################################
+
+1.) At 10% duty cycle the current of the coil at 0 deg and 40 deg are very similar
+    (this could help with no config needed)
+    
+    10% duty cycle could be use to sense the position of the door because it uses smaller current
+    and so it produces less force.
+
+ 

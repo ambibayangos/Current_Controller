@@ -1,0 +1,21 @@
+Circuit: * \\files.auckland.ac.nz\myhome\Desktop\Current_Controller\LTspice\Sensing_Concept.asc
+
+.OP point found by inspection.
+
+Date: Thu Oct 29 20:11:55 2020
+Total elapsed time: 1.759 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 74946
+traniter = 74946
+tranpoints = 37474
+accept = 30559
+rejected = 6915
+matrix size = 24
+fillins = 0
+solver = Normal
+Matrix Compiler1: 758 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 1.25 KB object code size  0.1/0.1/[0.1]
+
